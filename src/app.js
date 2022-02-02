@@ -21,7 +21,7 @@ app.use(routes)
 //this is the default post route for users' form submit
 routes.post('/mail', async (req, res) => {
   try {
-    //this are attributtes inputted by the user
+    //these are attributtes inputted by the user
     const {name, email, subject, message} = req.body 
 
     await transport.sendMail({
